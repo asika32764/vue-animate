@@ -86,7 +86,7 @@ For example, if I want to use *fadeInLeft* and *fadeOutLeft* on my element, I'll
 ```
 enter/leave is already written in the stylesheet, so just remove *In/Out* from the name and you're golden.
 
-#### Custom Transition Classes
+### Custom Transition Classes
 
 Animate.css's original classnames are supported on enter/leave transitions. So if you're going to use [Custom Transition Classes](http://vuejs.org/guide/transitions.html#Custom-Transition-Classes "Custom Transition Classes"), you can either add *-enter/-leave* to the classes:
 
@@ -111,17 +111,25 @@ Animate.css's original classnames are supported on enter/leave transitions. So i
 </transition>
 ```
 
-#### Supported Animations
+### Custom Animation Duration
+
+```html
+<transition name="fade">
+  <p v-if="show" style="animation-duration: 0.3s">hello</p>
+</transition>
+```
+
+## Supported Animations
   Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue2-animate (aka - *what you can put in the transition="x"* attribute) as of right now:
 
-##### Bounce
+### Bounce
   * `bounce`
   * `bounceDown`
   * `bounceLeft`
   * `bounceRight`
   * `bounceUp`
 
-##### Fade
+### Fade
   * `fade`
   * `fadeDown`
   * `fadeDownBig`
@@ -132,27 +140,27 @@ Animate.css's original classnames are supported on enter/leave transitions. So i
   * `fadeUp`
   * `fadeUpBig`
 
-##### Rotate
+### Rotate
   * `rotate`
   * `rotateDownLeft`
   * `rotateDownRight`
   * `rotateUpLeft`
   * `rotateUpRight`
 
-##### Slide
+### Slide
   * `slideDown`
   * `slideLeft`
   * `slideRight`
   * `slideUp`
 
-##### Zoom
+### Zoom
   * `zoom`
   * `zoomDown`
   * `zoomLeft`
   * `zoomRight`
   * `zoomUp`
 
-# License
+## License
 
 [MIT](http://opensource.org/licenses/MIT)
 
