@@ -5,7 +5,7 @@
 bower.json
 coverage
 config
-dist/*.map
+bin
 lib
 test
 docs
