@@ -26,7 +26,7 @@ fusion.task('less', function () {
   // Watch end
 
   // Compile Start
-  fusion.less('src/less/**/vue2-animate.scss', 'dist/vue2-animate.css');
+  fusion.less('src/less/**/vue2-animate.less', 'dist/vue2-animate.css');
   // Compile end
 });
 
