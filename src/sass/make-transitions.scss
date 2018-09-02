@@ -1,3 +1,11 @@
+@function quoteIf($property, $condition) {
+  @if ($condition == true) {
+    @return '#{$property}';
+  } @else {
+    @return $property;
+  }
+}
+
 @mixin make-transitions($base, $names) {
 
   // We'll make a single rule for all transitions that
@@ -19,11 +27,11 @@
 
   // Entrance/Exit for the base class
   .#{$base}-enter-active, .#{$base}In {
-    animation-name: '#{$base}In';
+    animation-name: quoteIf(#{$base}In, $quoteAnimationNames);
   }
 
   .#{$base}-leave-active, .#{$base}Out {
-    animation-name: '#{$base}Out';
+    animation-name: quoteIf(#{$base}Out, $quoteAnimationNames);
   }
 
   // Loop through the different animations, and set
@@ -36,10 +44,10 @@
     }
 
     .#{$base}#{$name}-enter-active, .#{$base}In#{$name} {
-      animation-name: '#{$base}In#{$name}';
+      animation-name: quoteIf(#{$base}In#{$name}, $quoteAnimationNames);
     }
     .#{$base}#{$name}-leave-active, .#{$base}Out#{$name} {
-      animation-name: '#{$base}Out#{$name}';
+      animation-name: quoteIf(#{$base}Out#{$name}, $quoteAnimationNames);
     }
   }
 }
