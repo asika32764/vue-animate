@@ -8,7 +8,11 @@
  */
 
 $animationDuration: 1s !default;
-$quoteAnimationNames: true !default;
+
+// W3C disallow quote on animate name, so this variable set to false as default after 2.1.0.
+// @see https://github.com/asika32764/vue2-animate/pull/20
+// @deprecated 3.0
+$quoteAnimationNames: false !default;
 
 // Main mixin
 @import "make-transitions";

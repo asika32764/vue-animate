@@ -357,12 +357,12 @@
           animation-fill-mode: both; }
 
 .bounce-enter-active, .bounceIn {
-  -webkit-animation-name: "bounceIn";
-          animation-name: "bounceIn"; }
+  -webkit-animation-name: bounceIn;
+          animation-name: bounceIn; }
 
 .bounce-leave-active, .bounceOut {
-  -webkit-animation-name: "bounceOut";
-          animation-name: "bounceOut"; }
+  -webkit-animation-name: bounceOut;
+          animation-name: bounceOut; }
 
 .bounceDown-enter-active, .bounceInDown,
 .bounceDown-leave-active, .bounceOutDown {
@@ -372,12 +372,12 @@
           animation-fill-mode: both; }
 
 .bounceDown-enter-active, .bounceInDown {
-  -webkit-animation-name: "bounceInDown";
-          animation-name: "bounceInDown"; }
+  -webkit-animation-name: bounceInDown;
+          animation-name: bounceInDown; }
 
 .bounceDown-leave-active, .bounceOutDown {
-  -webkit-animation-name: "bounceOutDown";
-          animation-name: "bounceOutDown"; }
+  -webkit-animation-name: bounceOutDown;
+          animation-name: bounceOutDown; }
 
 .bounceLeft-enter-active, .bounceInLeft,
 .bounceLeft-leave-active, .bounceOutLeft {
@@ -387,12 +387,12 @@
           animation-fill-mode: both; }
 
 .bounceLeft-enter-active, .bounceInLeft {
-  -webkit-animation-name: "bounceInLeft";
-          animation-name: "bounceInLeft"; }
+  -webkit-animation-name: bounceInLeft;
+          animation-name: bounceInLeft; }
 
 .bounceLeft-leave-active, .bounceOutLeft {
-  -webkit-animation-name: "bounceOutLeft";
-          animation-name: "bounceOutLeft"; }
+  -webkit-animation-name: bounceOutLeft;
+          animation-name: bounceOutLeft; }
 
 .bounceRight-enter-active, .bounceInRight,
 .bounceRight-leave-active, .bounceOutRight {
@@ -402,12 +402,12 @@
           animation-fill-mode: both; }
 
 .bounceRight-enter-active, .bounceInRight {
-  -webkit-animation-name: "bounceInRight";
-          animation-name: "bounceInRight"; }
+  -webkit-animation-name: bounceInRight;
+          animation-name: bounceInRight; }
 
 .bounceRight-leave-active, .bounceOutRight {
-  -webkit-animation-name: "bounceOutRight";
-          animation-name: "bounceOutRight"; }
+  -webkit-animation-name: bounceOutRight;
+          animation-name: bounceOutRight; }
 
 .bounceUp-enter-active, .bounceInUp,
 .bounceUp-leave-active, .bounceOutUp {
@@ -417,12 +417,12 @@
           animation-fill-mode: both; }
 
 .bounceUp-enter-active, .bounceInUp {
-  -webkit-animation-name: "bounceInUp";
-          animation-name: "bounceInUp"; }
+  -webkit-animation-name: bounceInUp;
+          animation-name: bounceInUp; }
 
 .bounceUp-leave-active, .bounceOutUp {
-  -webkit-animation-name: "bounceOutUp";
-          animation-name: "bounceOutUp"; }
+  -webkit-animation-name: bounceOutUp;
+          animation-name: bounceOutUp; }
 
 @-webkit-keyframes fadeIn {
   from {
@@ -736,12 +736,12 @@
           animation-fill-mode: both; }
 
 .fade-enter-active, .fadeIn {
-  -webkit-animation-name: "fadeIn";
-          animation-name: "fadeIn"; }
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn; }
 
 .fade-leave-active, .fadeOut {
-  -webkit-animation-name: "fadeOut";
-          animation-name: "fadeOut"; }
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut; }
 
 .fadeDown-enter-active, .fadeInDown,
 .fadeDown-leave-active, .fadeOutDown {
@@ -751,12 +751,12 @@
           animation-fill-mode: both; }
 
 .fadeDown-enter-active, .fadeInDown {
-  -webkit-animation-name: "fadeInDown";
-          animation-name: "fadeInDown"; }
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown; }
 
 .fadeDown-leave-active, .fadeOutDown {
-  -webkit-animation-name: "fadeOutDown";
-          animation-name: "fadeOutDown"; }
+  -webkit-animation-name: fadeOutDown;
+          animation-name: fadeOutDown; }
 
 .fadeDownBig-enter-active, .fadeInDownBig,
 .fadeDownBig-leave-active, .fadeOutDownBig {
@@ -766,12 +766,12 @@
           animation-fill-mode: both; }
 
 .fadeDownBig-enter-active, .fadeInDownBig {
-  -webkit-animation-name: "fadeInDownBig";
-          animation-name: "fadeInDownBig"; }
+  -webkit-animation-name: fadeInDownBig;
+          animation-name: fadeInDownBig; }
 
 .fadeDownBig-leave-active, .fadeOutDownBig {
-  -webkit-animation-name: "fadeOutDownBig";
-          animation-name: "fadeOutDownBig"; }
+  -webkit-animation-name: fadeOutDownBig;
+          animation-name: fadeOutDownBig; }
 
 .fadeLeft-enter-active, .fadeInLeft,
 .fadeLeft-leave-active, .fadeOutLeft {
@@ -781,12 +781,12 @@
           animation-fill-mode: both; }
 
 .fadeLeft-enter-active, .fadeInLeft {
-  -webkit-animation-name: "fadeInLeft";
-          animation-name: "fadeInLeft"; }
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft; }
 
 .fadeLeft-leave-active, .fadeOutLeft {
-  -webkit-animation-name: "fadeOutLeft";
-          animation-name: "fadeOutLeft"; }
+  -webkit-animation-name: fadeOutLeft;
+          animation-name: fadeOutLeft; }
 
 .fadeLeftBig-enter-active, .fadeInLeftBig,
 .fadeLeftBig-leave-active, .fadeOutLeftBig {
@@ -796,12 +796,12 @@
           animation-fill-mode: both; }
 
 .fadeLeftBig-enter-active, .fadeInLeftBig {
-  -webkit-animation-name: "fadeInLeftBig";
-          animation-name: "fadeInLeftBig"; }
+  -webkit-animation-name: fadeInLeftBig;
+          animation-name: fadeInLeftBig; }
 
 .fadeLeftBig-leave-active, .fadeOutLeftBig {
-  -webkit-animation-name: "fadeOutLeftBig";
-          animation-name: "fadeOutLeftBig"; }
+  -webkit-animation-name: fadeOutLeftBig;
+          animation-name: fadeOutLeftBig; }
 
 .fadeRight-enter-active, .fadeInRight,
 .fadeRight-leave-active, .fadeOutRight {
@@ -811,12 +811,12 @@
           animation-fill-mode: both; }
 
 .fadeRight-enter-active, .fadeInRight {
-  -webkit-animation-name: "fadeInRight";
-          animation-name: "fadeInRight"; }
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight; }
 
 .fadeRight-leave-active, .fadeOutRight {
-  -webkit-animation-name: "fadeOutRight";
-          animation-name: "fadeOutRight"; }
+  -webkit-animation-name: fadeOutRight;
+          animation-name: fadeOutRight; }
 
 .fadeRightBig-enter-active, .fadeInRightBig,
 .fadeRightBig-leave-active, .fadeOutRightBig {
@@ -826,12 +826,12 @@
           animation-fill-mode: both; }
 
 .fadeRightBig-enter-active, .fadeInRightBig {
-  -webkit-animation-name: "fadeInRightBig";
-          animation-name: "fadeInRightBig"; }
+  -webkit-animation-name: fadeInRightBig;
+          animation-name: fadeInRightBig; }
 
 .fadeRightBig-leave-active, .fadeOutRightBig {
-  -webkit-animation-name: "fadeOutRightBig";
-          animation-name: "fadeOutRightBig"; }
+  -webkit-animation-name: fadeOutRightBig;
+          animation-name: fadeOutRightBig; }
 
 .fadeUp-enter-active, .fadeInUp,
 .fadeUp-leave-active, .fadeOutUp {
@@ -841,12 +841,12 @@
           animation-fill-mode: both; }
 
 .fadeUp-enter-active, .fadeInUp {
-  -webkit-animation-name: "fadeInUp";
-          animation-name: "fadeInUp"; }
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp; }
 
 .fadeUp-leave-active, .fadeOutUp {
-  -webkit-animation-name: "fadeOutUp";
-          animation-name: "fadeOutUp"; }
+  -webkit-animation-name: fadeOutUp;
+          animation-name: fadeOutUp; }
 
 .fadeUpBig-enter-active, .fadeInUpBig,
 .fadeUpBig-leave-active, .fadeOutUpBig {
@@ -856,12 +856,12 @@
           animation-fill-mode: both; }
 
 .fadeUpBig-enter-active, .fadeInUpBig {
-  -webkit-animation-name: "fadeInUpBig";
-          animation-name: "fadeInUpBig"; }
+  -webkit-animation-name: fadeInUpBig;
+          animation-name: fadeInUpBig; }
 
 .fadeUpBig-leave-active, .fadeOutUpBig {
-  -webkit-animation-name: "fadeOutUpBig";
-          animation-name: "fadeOutUpBig"; }
+  -webkit-animation-name: fadeOutUpBig;
+          animation-name: fadeOutUpBig; }
 
 @-webkit-keyframes rotateIn {
   from {
@@ -1131,12 +1131,12 @@
           animation-fill-mode: both; }
 
 .rotate-enter-active, .rotateIn {
-  -webkit-animation-name: "rotateIn";
-          animation-name: "rotateIn"; }
+  -webkit-animation-name: rotateIn;
+          animation-name: rotateIn; }
 
 .rotate-leave-active, .rotateOut {
-  -webkit-animation-name: "rotateOut";
-          animation-name: "rotateOut"; }
+  -webkit-animation-name: rotateOut;
+          animation-name: rotateOut; }
 
 .rotateDownLeft-enter-active, .rotateInDownLeft,
 .rotateDownLeft-leave-active, .rotateOutDownLeft {
@@ -1146,12 +1146,12 @@
           animation-fill-mode: both; }
 
 .rotateDownLeft-enter-active, .rotateInDownLeft {
-  -webkit-animation-name: "rotateInDownLeft";
-          animation-name: "rotateInDownLeft"; }
+  -webkit-animation-name: rotateInDownLeft;
+          animation-name: rotateInDownLeft; }
 
 .rotateDownLeft-leave-active, .rotateOutDownLeft {
-  -webkit-animation-name: "rotateOutDownLeft";
-          animation-name: "rotateOutDownLeft"; }
+  -webkit-animation-name: rotateOutDownLeft;
+          animation-name: rotateOutDownLeft; }
 
 .rotateDownRight-enter-active, .rotateInDownRight,
 .rotateDownRight-leave-active, .rotateOutDownRight {
@@ -1161,12 +1161,12 @@
           animation-fill-mode: both; }
 
 .rotateDownRight-enter-active, .rotateInDownRight {
-  -webkit-animation-name: "rotateInDownRight";
-          animation-name: "rotateInDownRight"; }
+  -webkit-animation-name: rotateInDownRight;
+          animation-name: rotateInDownRight; }
 
 .rotateDownRight-leave-active, .rotateOutDownRight {
-  -webkit-animation-name: "rotateOutDownRight";
-          animation-name: "rotateOutDownRight"; }
+  -webkit-animation-name: rotateOutDownRight;
+          animation-name: rotateOutDownRight; }
 
 .rotateUpLeft-enter-active, .rotateInUpLeft,
 .rotateUpLeft-leave-active, .rotateOutUpLeft {
@@ -1176,12 +1176,12 @@
           animation-fill-mode: both; }
 
 .rotateUpLeft-enter-active, .rotateInUpLeft {
-  -webkit-animation-name: "rotateInUpLeft";
-          animation-name: "rotateInUpLeft"; }
+  -webkit-animation-name: rotateInUpLeft;
+          animation-name: rotateInUpLeft; }
 
 .rotateUpLeft-leave-active, .rotateOutUpLeft {
-  -webkit-animation-name: "rotateOutUpLeft";
-          animation-name: "rotateOutUpLeft"; }
+  -webkit-animation-name: rotateOutUpLeft;
+          animation-name: rotateOutUpLeft; }
 
 .rotateUpRight-enter-active, .rotateInUpRight,
 .rotateUpRight-leave-active, .rotateOutUpRight {
@@ -1191,12 +1191,12 @@
           animation-fill-mode: both; }
 
 .rotateUpRight-enter-active, .rotateInUpRight {
-  -webkit-animation-name: "rotateInUpRight";
-          animation-name: "rotateInUpRight"; }
+  -webkit-animation-name: rotateInUpRight;
+          animation-name: rotateInUpRight; }
 
 .rotateUpRight-leave-active, .rotateOutUpRight {
-  -webkit-animation-name: "rotateOutUpRight";
-          animation-name: "rotateOutUpRight"; }
+  -webkit-animation-name: rotateOutUpRight;
+          animation-name: rotateOutUpRight; }
 
 @-webkit-keyframes slideInDown {
   from {
@@ -1350,12 +1350,12 @@
           animation-fill-mode: both; }
 
 .slide-enter-active, .slideIn {
-  -webkit-animation-name: "slideIn";
-          animation-name: "slideIn"; }
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn; }
 
 .slide-leave-active, .slideOut {
-  -webkit-animation-name: "slideOut";
-          animation-name: "slideOut"; }
+  -webkit-animation-name: slideOut;
+          animation-name: slideOut; }
 
 .slideDown-enter-active, .slideInDown,
 .slideDown-leave-active, .slideOutDown {
@@ -1365,12 +1365,12 @@
           animation-fill-mode: both; }
 
 .slideDown-enter-active, .slideInDown {
-  -webkit-animation-name: "slideInDown";
-          animation-name: "slideInDown"; }
+  -webkit-animation-name: slideInDown;
+          animation-name: slideInDown; }
 
 .slideDown-leave-active, .slideOutDown {
-  -webkit-animation-name: "slideOutDown";
-          animation-name: "slideOutDown"; }
+  -webkit-animation-name: slideOutDown;
+          animation-name: slideOutDown; }
 
 .slideLeft-enter-active, .slideInLeft,
 .slideLeft-leave-active, .slideOutLeft {
@@ -1380,12 +1380,12 @@
           animation-fill-mode: both; }
 
 .slideLeft-enter-active, .slideInLeft {
-  -webkit-animation-name: "slideInLeft";
-          animation-name: "slideInLeft"; }
+  -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft; }
 
 .slideLeft-leave-active, .slideOutLeft {
-  -webkit-animation-name: "slideOutLeft";
-          animation-name: "slideOutLeft"; }
+  -webkit-animation-name: slideOutLeft;
+          animation-name: slideOutLeft; }
 
 .slideRight-enter-active, .slideInRight,
 .slideRight-leave-active, .slideOutRight {
@@ -1395,12 +1395,12 @@
           animation-fill-mode: both; }
 
 .slideRight-enter-active, .slideInRight {
-  -webkit-animation-name: "slideInRight";
-          animation-name: "slideInRight"; }
+  -webkit-animation-name: slideInRight;
+          animation-name: slideInRight; }
 
 .slideRight-leave-active, .slideOutRight {
-  -webkit-animation-name: "slideOutRight";
-          animation-name: "slideOutRight"; }
+  -webkit-animation-name: slideOutRight;
+          animation-name: slideOutRight; }
 
 .slideUp-enter-active, .slideInUp,
 .slideUp-leave-active, .slideOutUp {
@@ -1410,12 +1410,12 @@
           animation-fill-mode: both; }
 
 .slideUp-enter-active, .slideInUp {
-  -webkit-animation-name: "slideInUp";
-          animation-name: "slideInUp"; }
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp; }
 
 .slideUp-leave-active, .slideOutUp {
-  -webkit-animation-name: "slideOutUp";
-          animation-name: "slideOutUp"; }
+  -webkit-animation-name: slideOutUp;
+          animation-name: slideOutUp; }
 
 @-webkit-keyframes zoomIn {
   from {
@@ -1685,12 +1685,12 @@
           animation-fill-mode: both; }
 
 .zoom-enter-active, .zoomIn {
-  -webkit-animation-name: "zoomIn";
-          animation-name: "zoomIn"; }
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn; }
 
 .zoom-leave-active, .zoomOut {
-  -webkit-animation-name: "zoomOut";
-          animation-name: "zoomOut"; }
+  -webkit-animation-name: zoomOut;
+          animation-name: zoomOut; }
 
 .zoomDown-enter-active, .zoomInDown,
 .zoomDown-leave-active, .zoomOutDown {
@@ -1700,12 +1700,12 @@
           animation-fill-mode: both; }
 
 .zoomDown-enter-active, .zoomInDown {
-  -webkit-animation-name: "zoomInDown";
-          animation-name: "zoomInDown"; }
+  -webkit-animation-name: zoomInDown;
+          animation-name: zoomInDown; }
 
 .zoomDown-leave-active, .zoomOutDown {
-  -webkit-animation-name: "zoomOutDown";
-          animation-name: "zoomOutDown"; }
+  -webkit-animation-name: zoomOutDown;
+          animation-name: zoomOutDown; }
 
 .zoomLeft-enter-active, .zoomInLeft,
 .zoomLeft-leave-active, .zoomOutLeft {
@@ -1715,12 +1715,12 @@
           animation-fill-mode: both; }
 
 .zoomLeft-enter-active, .zoomInLeft {
-  -webkit-animation-name: "zoomInLeft";
-          animation-name: "zoomInLeft"; }
+  -webkit-animation-name: zoomInLeft;
+          animation-name: zoomInLeft; }
 
 .zoomLeft-leave-active, .zoomOutLeft {
-  -webkit-animation-name: "zoomOutLeft";
-          animation-name: "zoomOutLeft"; }
+  -webkit-animation-name: zoomOutLeft;
+          animation-name: zoomOutLeft; }
 
 .zoomRight-enter-active, .zoomInRight,
 .zoomRight-leave-active, .zoomOutRight {
@@ -1730,12 +1730,12 @@
           animation-fill-mode: both; }
 
 .zoomRight-enter-active, .zoomInRight {
-  -webkit-animation-name: "zoomInRight";
-          animation-name: "zoomInRight"; }
+  -webkit-animation-name: zoomInRight;
+          animation-name: zoomInRight; }
 
 .zoomRight-leave-active, .zoomOutRight {
-  -webkit-animation-name: "zoomOutRight";
-          animation-name: "zoomOutRight"; }
+  -webkit-animation-name: zoomOutRight;
+          animation-name: zoomOutRight; }
 
 .zoomUp-enter-active, .zoomInUp,
 .zoomUp-leave-active, .zoomOutUp {
@@ -1745,11 +1745,11 @@
           animation-fill-mode: both; }
 
 .zoomUp-enter-active, .zoomInUp {
-  -webkit-animation-name: "zoomInUp";
-          animation-name: "zoomInUp"; }
+  -webkit-animation-name: zoomInUp;
+          animation-name: zoomInUp; }
 
 .zoomUp-leave-active, .zoomOutUp {
-  -webkit-animation-name: "zoomOutUp";
-          animation-name: "zoomOutUp"; }
+  -webkit-animation-name: zoomOutUp;
+          animation-name: zoomOutUp; }
 
 /*# sourceMappingURL=vue2-animate.css.map */
