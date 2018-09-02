@@ -11,6 +11,31 @@ A [Vue.js](http://vuejs.org/ "Vue.js") port of [Animate.css](https://github.com/
 
 **Thanks [@pavels-hyuna](https://github.com/pavels-hyuna) for his SCSS version work.**
 
+## Table of Content
+
+<!-- TOC -->
+
+- [Table of Content](#table-of-content)
+- [Installation](#installation)
+    - [HTML](#html)
+    - [NPM / Yarn](#npm--yarn)
+- [SASS/SCSS](#sassscss)
+- [Less](#less)
+- [Building](#building)
+- [Usage](#usage)
+    - [Custom Transition Classes](#custom-transition-classes)
+    - [Custom Animation Duration](#custom-animation-duration)
+- [Supported Animations](#supported-animations)
+    - [Bounce](#bounce)
+    - [Fade](#fade)
+    - [Rotate](#rotate)
+    - [Slide](#slide)
+    - [Zoom](#zoom)
+- [License](#license)
+- [Contributing](#contributing)
+
+<!-- /TOC -->
+
 ## Installation
 
 ### HTML
