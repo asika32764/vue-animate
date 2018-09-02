@@ -42,7 +42,5 @@
     "build:less": "cross-env NODE_ENV=development node_modules/gulp/bin/gulp.js less --gulpfile=fusionfile.js",
     "watch:less": "cross-env NODE_ENV=development node_modules/gulp/bin/gulp.js less --gulpfile=fusionfile.js --watch=1"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
