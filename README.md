@@ -1,4 +1,4 @@
-# vue2-animate for Vue.js 2.0
+# vue2-animate for Vue.js 2
 
 *Cross-browser CSS3 animation library*
 
@@ -7,43 +7,60 @@
 
 A [Vue.js](http://vuejs.org/ "Vue.js") port of [Animate.css](https://github.com/daneden/animate.css "Animate.css"). For use with Vue's built-in transitions. | [DEMO](https://the-allstars.com/vue2-animate/)
 
-**This is modified version of: https://github.com/haydenbbickerton/vue-animate for Vue 2.0**
+**This is modified version of: https://github.com/haydenbbickerton/vue-animate for Vue 2**
 
 **Thanks [@pavels-hyuna](https://github.com/pavels-hyuna) for his SCSS version work.**
 
 ## Installation
-#### HTML
+
+### HTML
+
 Include the stylesheet:
 
-  ```html
-  <head>
-    <link rel="stylesheet" href="vue2-animate.min.css">
-  </head>
-  ```
-#### npm
-  If you're on webpack and using the [css-loader](https://github.com/webpack/css-loader "css loader"), you can use something like this:
-  ```shell
-  npm install --save vue2-animate
-  ```
-  ```js
-  require('vue2-animate/dist/vue2-animate.min.css')
-  ```
+```html
+<head>
+<link rel="stylesheet" href="vue2-animate.min.css">
+</head>
+```
 
-#### Sass/Scss
+Include by CDN:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/vue2-animate/dist/vue2-animate.min.css"/>
+```
+  
+### NPM / Yarn
+
+If you're on webpack and using the [css-loader](https://github.com/webpack/css-loader "css loader"), you can use something like this:
+
+```shell
+npm install --save vue2-animate
+
+# OR
+
+yarn add vue2-animate
+```
+
+```js
+require('vue2-animate/dist/vue2-animate.min.css')
+```
+
+## SASS/SCSS
   
 ```scss
 $animationDuration: 0.5s; // specify animation duration. Default value: 1s
 @import "<PATH_TO_SOURCE>/src/sass/vue2-animate.scss";
 ```
 
-#### Less
+## Less
+
 ```less
 @import "<PATH_TO_SOURCE>/src/less/vue2-animate.less";
 ```
 
 > **NOTE** LESS version is deprecated and no-longer maintained. Use SCSS version for your new project.
 
-#### Building
+## Building
 
 ```shell
 git clone https://github.com/asika32764/vue2-animate.git
@@ -56,17 +73,18 @@ You are able to build LESS version with command `npm run build:less`.
 
 ## Usage
 
-  Use [Vue.js transitions](http://vuejs.org/guide/transitions.html "Vue.js Transitions") as you normally would, but for the transition name you will use one of [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") **removing** the ***In/Out*** from the name.
+Use [Vue.js transitions](http://vuejs.org/guide/transitions.html "Vue.js Transitions") as you normally would, but for the transition name you will use one of [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") **removing** the ***In/Out*** from the name.
 
-  For example, if I want to use *fadeInLeft* and *fadeOutLeft* on my element, I'll write:
+For example, if I want to use *fadeInLeft* and *fadeOutLeft* on my element, I'll write:
+
 ```html
 <transition-group name="fadeLeft" tag="ul">
-    <li v-for="item in items" v-bind:key="item">
+    <li v-for="item in items" :key="item.id">
         {{ item }}
     </li>
 </transition-group>
 ```
-  enter/leave is already written in the stylesheet, so just remove *In/Out* from the name and you're golden.
+enter/leave is already written in the stylesheet, so just remove *In/Out* from the name and you're golden.
 
 #### Custom Transition Classes
 
