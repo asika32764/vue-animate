@@ -7,9 +7,12 @@
 
 A [Vue.js](http://vuejs.org/ "Vue.js") port of [Animate.css](https://github.com/daneden/animate.css "Animate.css"). For use with Vue's built-in transitions. | [DEMO](https://the-allstars.com/vue2-animate/)
 
-**This is modified version of: https://github.com/haydenbbickerton/vue-animate for Vue 2**
+## Credit
 
-**Thanks [@pavels-hyuna](https://github.com/pavels-hyuna) for his SCSS version work.**
+- [@haydenbbickerton](https://github.com/haydenbbickerton/vue-animate) is the origin [vue-animate (LESS)](https://github.com/haydenbbickerton/vue-animate) author (Only for Vue 1.x).
+- [@pavels-hyuna](https://github.com/pavels-hyuna) is SCSS version author.
+
+I'm just project maintainer, any changes or request please open a Pull-Request.
 
 ## Table of Content
 
@@ -188,7 +191,3 @@ Animate.css's original classnames are supported on enter/leave transitions. So i
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
-
-## Contributing
-
-Pull requests are welcome :)
