@@ -147,6 +147,18 @@ Animate.css's original classnames are supported on enter/leave transitions. So i
 </transition>
 ```
 
+### Slide like Mobile
+
+The view element must set position as absolute.
+
+```
+<transition
+    enter-active-class="animated slideInRight"
+    leave-active-class="animated slideOutLeft">
+    <router-view appear :key="path"></router-view>
+</transition>
+```
+
 ## Supported Animations
   Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue2-animate (aka - *what you can put in the transition="x"* attribute) as of right now:
 
