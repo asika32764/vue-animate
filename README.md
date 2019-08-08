@@ -31,6 +31,7 @@ I'm just project maintainer, any changes or request please open a Pull-Request.
 - [Supported Animations](#supported-animations)
     - [Bounce](#bounce)
     - [Fade](#fade)
+    - [Flip](#flip)
     - [Rotate](#rotate)
     - [Slide](#slide)
     - [Zoom](#zoom)
@@ -179,6 +180,11 @@ The view element must set position as absolute.
   * `fadeRightBig`
   * `fadeUp`
   * `fadeUpBig`
+
+### Rotate
+  * `flip`
+  * `flipX`
+  * `flipY`
 
 ### Rotate
   * `rotate`

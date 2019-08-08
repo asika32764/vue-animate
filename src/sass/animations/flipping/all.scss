@@ -1,0 +1,9 @@
+@import 'flip';
+@import 'flipInX';
+@import 'flipInY';
+@import 'flipOutX';
+@import 'flipOutY';
+
+$flips: flip,flipInX,flipInY,flipOutX,flipOutY;
+
+@include make-transitions(flip, $flips);
