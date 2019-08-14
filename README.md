@@ -181,7 +181,7 @@ The view element must set position as absolute.
   * `fadeUp`
   * `fadeUpBig`
 
-### Rotate
+### Flip
   * `flip`
   * `flipX`
   * `flipY`
