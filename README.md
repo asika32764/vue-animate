@@ -35,6 +35,7 @@ I'm just project maintainer, any changes or request please open a Pull-Request.
     - [Rotate](#rotate)
     - [Slide](#slide)
     - [Zoom](#zoom)
+    - [LightSpeed](#lightSpeed)
 - [License](#license)
 - [Contributing](#contributing)
 
