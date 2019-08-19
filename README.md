@@ -205,7 +205,8 @@ The view element must set position as absolute.
   * `zoomLeft`
   * `zoomRight`
   * `zoomUp`
-
+### LightSpeed
+  * `lightSpeed`
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
