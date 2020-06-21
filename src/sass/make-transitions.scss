@@ -6,6 +6,9 @@
   }
 }
 
+// Variable needs to be initialized first
+$quoteAnimationNames: false;
+
 @mixin make-transitions($base, $names) {
 
   // We'll make a single rule for all transitions that
