@@ -1,4 +1,4 @@
-# vue2-animate for Vue.js 2
+# vue2-animate for Vue.js 2 and 3
 
 *Cross-browser CSS3 animation library*
 
