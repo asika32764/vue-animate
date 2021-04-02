@@ -1,17 +1,17 @@
 # vue2-animate
 
-Support for:
-
-- Vue 2.x
-- Vue 3.x
-- Alpine.js
-
 *Cross-browser CSS3 animation library*
 
 [![Version](https://img.shields.io/npm/v/vue2-animate.svg?style=flat-square)](https://www.npmjs.com/package/vue2-animate)
 [![License](https://img.shields.io/npm/l/vue2-animate.svg?style=flat-square)](LICENSE)
 
 A [Vue.js](http://vuejs.org/ "Vue.js") port of [Animate.css](https://github.com/daneden/animate.css "Animate.css"). For use with Vue's built-in transitions. | [DEMO](https://the-allstars.com/vue2-animate/)
+
+Support for:
+
+- Vue 2.x
+- Vue 3.x
+- Alpine.js
 
 ## Credit
 
