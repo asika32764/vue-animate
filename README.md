@@ -1,4 +1,10 @@
-# vue2-animate for Vue.js 2 and 3
+# vue2-animate
+
+Support for:
+
+- Vue 2.x
+- Vue 3.x
+- Alpine.js
 
 *Cross-browser CSS3 animation library*
 
@@ -160,6 +166,20 @@ The view element must set position as absolute.
     <router-view appear :key="path"></router-view>
 </transition>
 ```
+
+## Work with Alpine.js
+
+Alpine `x-transition` must add `enter` and `leave` suffix, you have to add `In` and `Out` suffix after animation name.
+
+```html
+<div x-show="open"
+    x-transition:enter="fadeIn"
+    x-transition:leave="fadeOut"
+    style="animation-duration: .3s"
+>...</div>
+```
+
+See also: https://github.com/alpinejs/alpine#x-transition
 
 ## Supported Animations
   Not all [Animate.css animations](https://github.com/daneden/animate.css#basic-usage "animations") are supported at the moment. Here is a list of what's in vue2-animate (aka - *what you can put in the transition="x"* attribute) as of right now:
