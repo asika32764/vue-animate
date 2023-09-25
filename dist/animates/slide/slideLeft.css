@@ -1,0 +1,11 @@
+.slideLeft-enter-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: slideInLeft;
+}
+
+.slideLeft-leave-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: slideOutLeft;
+}

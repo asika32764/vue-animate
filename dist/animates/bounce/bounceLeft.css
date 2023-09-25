@@ -1,0 +1,11 @@
+.bounceLeft-enter-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: bounceInLeft;
+}
+
+.bounceLeft-leave-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: bounceOutLeft;
+}

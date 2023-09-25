@@ -1,0 +1,11 @@
+.rotateUpLeft-enter-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: rotateInUpLeft;
+}
+
+.rotateUpLeft-leave-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: rotateOutUpLeft;
+}

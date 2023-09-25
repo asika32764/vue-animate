@@ -1,0 +1,11 @@
+.zoom-enter-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: zoomIn;
+}
+
+.zoom-leave-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: zoomOut;
+}
