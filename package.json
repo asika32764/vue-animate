@@ -1,0 +1,41 @@
+{
+  "name": "vue-animate.css",
+  "homepage": "https://github.com/vue-animate.css",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "css": "dist/vue-animate.css",
+  "main": "dist/vue-animate.cjs",
+  "browser": "dist/vue-animate.umd.js",
+  "module": "dist/vue-animate.es.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "generate": "ts-node -T --esm bin/generate.ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-typescript": "^11.1.3",
+    "@types/lodash-es": "^4.17.9",
+    "@types/node": "^20.6.2",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "animate.css": "^4.1.1",
+    "lodash-es": "^4.17.21",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss-header": "^3.0.3",
+    "postcss-import": "^15.1.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-dts": "^6.0.2",
+    "rollup-plugin-esbuild": "^6.0.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.67.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.5"
+  }
+}

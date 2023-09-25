@@ -1,0 +1,11 @@
+.backLeft-enter-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: backInLeft;
+}
+
+.backLeft-leave-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: backOutLeft;
+}

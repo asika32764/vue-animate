@@ -1,0 +1,11 @@
+.fadeTopLeft-enter-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: fadeInTopLeft;
+}
+
+.fadeTopLeft-leave-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: fadeOutTopLeft;
+}

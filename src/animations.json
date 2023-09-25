@@ -1,0 +1,62 @@
+{
+  "back": [
+    "backDown",
+    "backLeft",
+    "backRight",
+    "backUp"
+  ],
+  "bounce": [
+    "bounce",
+    "bounceDown",
+    "bounceLeft",
+    "bounceRight",
+    "bounceUp"
+  ],
+  "fade": [
+    "fade",
+    "fadeBottomLeft",
+    "fadeBottomRight",
+    "fadeDown",
+    "fadeDownBig",
+    "fadeLeft",
+    "fadeLeftBig",
+    "fadeRight",
+    "fadeRightBig",
+    "fadeTopLeft",
+    "fadeTopRight",
+    "fadeUp",
+    "fadeUpBig"
+  ],
+  "flip": [
+    "flip",
+    "flipX",
+    "flipY"
+  ],
+  "lightSpeed": [
+    "lightSpeedLeft",
+    "lightSpeedRight"
+  ],
+  "rotate": [
+    "rotate",
+    "rotateDownLeft",
+    "rotateDownRight",
+    "rotateUpLeft",
+    "rotateUpRight"
+  ],
+  "slide": [
+    "slideDown",
+    "slideLeft",
+    "slideRight",
+    "slideUp"
+  ],
+  "roll": [
+    "roll"
+  ],
+  "zoom": [
+    "zoom",
+    "zoomDown",
+    "zoomLeft",
+    "zoomRight",
+    "zoomUp"
+  ]
+}

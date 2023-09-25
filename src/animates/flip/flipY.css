@@ -1,0 +1,11 @@
+.flipY-enter-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: flipInY;
+}
+
+.flipY-leave-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: flipOutY;
+}

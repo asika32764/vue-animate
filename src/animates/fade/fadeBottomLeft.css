@@ -1,0 +1,11 @@
+.fadeBottomLeft-enter-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: fadeInBottomLeft;
+}
+
+.fadeBottomLeft-leave-active {
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-name: fadeOutBottomLeft;
+}
