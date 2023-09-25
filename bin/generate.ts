@@ -20,7 +20,7 @@ function run() {
   rmSync('src/css', { recursive: true, force: true });
 
   let indexContent = `
-@import 'node_modules/animate.css/animate.css';
+@import 'animate.css/animate.css';
 `;
 
   for (const dir of dirs) {
@@ -72,7 +72,7 @@ function run() {
 }
 
 function generateAttentions(dir: string) {
-  const typePath = resolve('animate.css/source', dir);
+  const typePath = resolve('node_modules/animate.css/source', dir);
   const files = readdirSync(typePath, { withFileTypes: true });
   const imports = [];
 
@@ -80,7 +80,7 @@ function generateAttentions(dir: string) {
     if (!file.isDirectory()) {
       const animName = basename(file.name, '.css');
 
-      imports.push(`export * from '@src/attentions/${animName}'`);
+      imports.push(`export * from '@src/attentions/${animName}';`);
 
       const dest = resolve('src/attentions', animName + '.ts');
       const code = handleAttention(animName);

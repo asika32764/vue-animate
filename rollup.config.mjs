@@ -104,7 +104,9 @@ export default [
       format: 'es',
     },
     plugins: [
-      dts()
+      dts({
+        tsconfig: './tsconfig.lib.json'
+      })
     ]
   }
 ];
