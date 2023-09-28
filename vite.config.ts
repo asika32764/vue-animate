@@ -4,6 +4,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: `./`,
   resolve: {
     alias: {
       '@': resolve('./src'),
@@ -13,6 +14,6 @@ export default defineConfig({
     vue()
   ],
   build: {
-    outDir: 'docs'
+    outDir: 'docs',
   }
 })
