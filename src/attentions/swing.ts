@@ -1,5 +1,17 @@
-import attention from '@src/attention';
-  
-export function swing(el: HTMLElement) {
-  return attention(el, 'swing');
-}  
+import { type AttentionOptions, doAttention } from '@src/attention';
+
+export function swing(
+  el: HTMLElement, options?: AttentionOptions,
+): Promise<void>;
+
+export function swing(
+  el: HTMLElement, duration?: number | string, options?: AttentionOptions,
+): Promise<void>;
+
+export function swing(
+  el: HTMLElement,
+  duration: AttentionOptions | number | string | undefined = undefined,
+  options: AttentionOptions = {},
+): Promise<void> {
+  return doAttention(el, 'swing', duration, options);
+}

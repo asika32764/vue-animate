@@ -75,10 +75,17 @@ function generateAttentions(dir: string) {
   const typePath = resolve('node_modules/animate.css/source', dir);
   const files = readdirSync(typePath, { withFileTypes: true });
   const imports = [];
+  const attentions = [];
 
   for (const file of files) {
     if (!file.isDirectory()) {
+      if (file.name === 'shake.css') {
+        continue;
+      }
+
       const animName = basename(file.name, '.css');
+
+      attentions.push(animName);
 
       imports.push(`export * from '@src/attentions/${animName}';`);
 
@@ -93,15 +100,27 @@ function generateAttentions(dir: string) {
   }
 
   writeFileSync(resolve('src/attentions/index.ts'), imports.join("\n"));
+  writeFileSync(resolve('src/attentions.json'), JSON.stringify(attentions));
 }
 
 function handleAttention(animName: string) {
-  return `import attention from '@src/attention';
-  
-export function ${animName}(el: HTMLElement) {
-  return attention(el, '${animName}');
-}  
-`;
+  return `import { type AttentionOptions, doAttention } from '@src/attention';
+
+export function ${animName}(
+  el: HTMLElement, options?: AttentionOptions,
+): Promise<void>;
+
+export function ${animName}(
+  el: HTMLElement, duration?: number | string, options?: AttentionOptions,
+): Promise<void>;
+
+export function ${animName}(
+  el: HTMLElement,
+  duration: AttentionOptions | number | string | undefined = undefined,
+  options: AttentionOptions = {},
+): Promise<void> {
+  return doAttention(el, '${animName}', duration, options);
+}`;
 }
 
 function handleInOutTransition(typePath: string, file: string) {
