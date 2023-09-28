@@ -74,7 +74,7 @@ function setVariables(el: HTMLElement, options: AttentionOptions) {
   }
 
   if (options.fillMode) {
-    el.style.setProperty('--animation-fill-mode', options.fillMode);
+    el.style.setProperty('animation-fill-mode', options.fillMode);
   }
 }
 
