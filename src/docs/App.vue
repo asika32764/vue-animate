@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import animations from '@src/animations.json';
-import attentions from '@src/attentions.json';
-import * as attentionFunctions from '@src/attentions/index';
+import animations from '@/animations-list.json';
+import attentions from '@/attentions-list.json';
+import * as attentionFunctions from '@/attentions';
 import { computed, ref } from 'vue';
 
 const lorem = 'Lorem ipsum dolor sit amet consectetur adipiscing elit Duis vestibulum tincidunt turpis Etiam eget eleifend elit In et vestibulum ipsum Donec eu convallis urna Pellentesque sit amet accumsan leo Aliquam elementum justo turpis mollis maximus libero faucibus non Vivamus et eros libero';
@@ -89,7 +89,7 @@ async function doAttention(name: keyof typeof attentionFunctions) {
     <div class="text-center mt-5">
       <div>
         <a href="https://vuejs.org/" target="_blank">
-          <img src="@/assets/vue.svg" class="logo vue" style="height: 175px" alt="Vue logo" />
+          <img src="@/docs/assets/vue.svg" class="logo vue" style="height: 175px" alt="Vue logo" />
         </a>
       </div>
       <div>

@@ -6,7 +6,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "paths": {
-      "@src/*": ["./src/*"],
+      "@/*": ["./src/*"],
     },
 
     /* Bundler mode */
@@ -23,5 +23,6 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src/**/*.ts"],
+  "exclude": ["src/docs/**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

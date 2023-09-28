@@ -6,14 +6,13 @@ import { resolve } from 'path';
 export default defineConfig({
   resolve: {
     alias: {
-      '@': resolve('./docs'),
-      '@src': resolve('./src'),
+      '@': resolve('./src'),
     },
   },
   plugins: [
     vue()
   ],
   build: {
-    outDir: 'docs-dist'
+    outDir: 'docs'
   }
 })

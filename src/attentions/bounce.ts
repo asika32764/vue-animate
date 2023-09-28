@@ -1,4 +1,4 @@
-import { type AttentionOptions, doAttention } from '@src/attention';
+import { type AttentionOptions, doAttention } from '@/attention';
 
 export function bounce(
   el: HTMLElement, options?: AttentionOptions,

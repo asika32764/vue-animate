@@ -6,8 +6,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "paths": {
-      "@/*": ["./docs/*"],
-      "@src/*": ["./src/*"],
+      "@/*": ["./src/*"],
     },
 
     /* Bundler mode */
@@ -24,6 +23,11 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["docs/**/*.ts", "docs/**/*.d.ts", "docs/**/*.tsx", "docs/**/*.vue"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
