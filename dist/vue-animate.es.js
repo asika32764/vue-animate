@@ -1,69 +1,109 @@
-function attention(el, animate) {
+function attention(el, animate, duration = undefined, options = {}) {
+    return doAttention(el, animate, duration, options);
+}
+function doAttention(el, animate, duration = undefined, options = {}) {
+    if (typeof duration === 'number' || typeof duration === 'string') {
+        options.duration = duration;
+    }
+    else if (duration != undefined) {
+        options = duration;
+    }
     return new Promise((resolve) => {
+        const rollbacks = getRollbacks(el);
         el.addEventListener('animationend', () => {
-            el.classList.remove(animate);
+            el.classList.remove('animate__animated', 'animate__' + animate);
+            restore(el, rollbacks);
             resolve();
         }, { once: true });
-        el.classList.add(animate);
+        setVariables(el, options);
+        el.classList.add('animate__animated', 'animate__' + animate);
     });
 }
-
-var attention$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    default: attention
-});
-
-function bounce(el) {
-    return attention(el, 'bounce');
+function setVariables(el, options) {
+    if (options.duration) {
+        el.style.setProperty('animation-duration', String(options.duration));
+    }
+    if (options.delay) {
+        el.style.setProperty('animation-delay', String(options.delay));
+    }
+    if (options.iterationCount) {
+        el.style.setProperty('animation-iteration-count', String(options.iterationCount));
+    }
+    if (options.direction) {
+        el.style.setProperty('animation-direction', options.direction);
+    }
+    if (options.fillMode) {
+        el.style.setProperty('--animation-fill-mode', options.fillMode);
+    }
+}
+function restore(el, rollbacks) {
+    for (const varName in rollbacks) {
+        const value = rollbacks[varName];
+        if (value === '') {
+            el.style.removeProperty(varName);
+        }
+        else {
+            el.style.setProperty(varName, value);
+        }
+    }
+}
+function getRollbacks(el) {
+    const rollbacks = {};
+    rollbacks['animation-duration'] = el.style.getPropertyValue('animation-duration');
+    rollbacks['animation-delay'] = el.style.getPropertyValue('animation-delay');
+    rollbacks['animation-iteration-count'] = el.style.getPropertyValue('animation-iteration-count');
+    rollbacks['animation-direction'] = el.style.getPropertyValue('animation-direction');
+    rollbacks['animation-fill-mode'] = el.style.getPropertyValue('animation-fill-mode');
+    return rollbacks;
 }
 
-function flash(el) {
-    return attention(el, 'flash');
+function bounce(el, duration = undefined, options = {}) {
+    return doAttention(el, 'bounce', duration, options);
 }
 
-function headShake(el) {
-    return attention(el, 'headShake');
+function flash(el, duration = undefined, options = {}) {
+    return doAttention(el, 'flash', duration, options);
 }
 
-function heartBeat(el) {
-    return attention(el, 'heartBeat');
+function headShake(el, duration = undefined, options = {}) {
+    return doAttention(el, 'headShake', duration, options);
 }
 
-function jello(el) {
-    return attention(el, 'jello');
+function heartBeat(el, duration = undefined, options = {}) {
+    return doAttention(el, 'heartBeat', duration, options);
 }
 
-function pulse(el) {
-    return attention(el, 'pulse');
+function jello(el, duration = undefined, options = {}) {
+    return doAttention(el, 'jello', duration, options);
 }
 
-function rubberBand(el) {
-    return attention(el, 'rubberBand');
+function pulse(el, duration = undefined, options = {}) {
+    return doAttention(el, 'pulse', duration, options);
 }
 
-function shake(el) {
-    return attention(el, 'shake');
+function rubberBand(el, duration = undefined, options = {}) {
+    return doAttention(el, 'rubberBand', duration, options);
 }
 
-function shakeX(el) {
-    return attention(el, 'shakeX');
+function shakeX(el, duration = undefined, options = {}) {
+    return doAttention(el, 'shakeX', duration, options);
 }
 
-function shakeY(el) {
-    return attention(el, 'shakeY');
+function shakeY(el, duration = undefined, options = {}) {
+    return doAttention(el, 'shakeY', duration, options);
 }
 
-function swing(el) {
-    return attention(el, 'swing');
+function swing(el, duration = undefined, options = {}) {
+    return doAttention(el, 'swing', duration, options);
 }
 
-function tada(el) {
-    return attention(el, 'tada');
+function tada(el, duration = undefined, options = {}) {
+    return doAttention(el, 'tada', duration, options);
 }
 
-function wobble(el) {
-    return attention(el, 'wobble');
+function wobble(el, duration = undefined, options = {}) {
+    return doAttention(el, 'wobble', duration, options);
 }
 
-export { attention$1 as attention, bounce, flash, headShake, heartBeat, jello, pulse, rubberBand, shake, shakeX, shakeY, swing, tada, wobble };
+export { attention, bounce, flash, headShake, heartBeat, jello, pulse, rubberBand, shakeX, shakeY, swing, tada, wobble };
 //# sourceMappingURL=vue-animate.es.js.map

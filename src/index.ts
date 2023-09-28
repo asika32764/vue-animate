@@ -1,2 +1,2 @@
-export { default as attention, AttentionOptions } from './attention';
+export { default as attention, type AttentionOptions } from './attention';
 export * from './attentions';

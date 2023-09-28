@@ -10,14 +10,10 @@ export default defineConfig({
       '@src': resolve('./src'),
     },
   },
-  build: {
-    lib: {
-      formats: ['es'],
-      entry: resolve('src/index.ts'),
-      name: 'vue-animate'
-    }
-  },
   plugins: [
     vue()
   ],
+  build: {
+    outDir: 'docs-dist'
+  }
 })
