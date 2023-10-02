@@ -49,7 +49,7 @@ yarn add @asika32764/vue-animate
 Import full animations.
 
 ```ts
-import '@asika32764/vue-animate/vue-animate.css';
+import '@asika32764/vue-animate/dist/vue-animate.css';
 ```
 
 Use [Vue.js transitions](https://vuejs.org/guide/built-ins/transition.html "Vue.js Transitions") as you normally would, but for the transition name you will use one of [Animate.css animations](https://animate.style/#utilities "animations") **removing** the `animate__` and `in/Out` from the name.
