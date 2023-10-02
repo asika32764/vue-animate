@@ -1,7 +1,7 @@
-# vue-animate.css
+# vue-animate
 
-[![Version](https://img.shields.io/npm/v/vue-animate.css.svg?style=flat-square)](https://www.npmjs.com/package/vue2-animate)
-[![License](https://img.shields.io/npm/l/vue-animate.css.svg?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/npm/v/@asika32764/vue-animate.svg?style=flat-square)](https://www.npmjs.com/package/vue2-animate)
+[![License](https://img.shields.io/npm/l/@asika32764/vue-animate.svg?style=flat-square)](LICENSE)
 
 Cross-browser CSS3 animation library, a port of animate.css for use with Vue.js transitions. [DEMO](https://vue-animate.simular.co/)
 
@@ -19,11 +19,10 @@ Support for:
 ## Table of Contents
 
 <!-- TOC -->
-* [vue-animate.css](#vue-animatecss)
+* [vue-animate](#vue-animate)
   * [Credit](#credit)
   * [Table of Contents](#table-of-contents)
   * [Installation](#installation)
-    * [NPM / Yarn](#npm--yarn)
   * [Transitions](#transitions)
     * [Custom Transition Classes](#custom-transition-classes)
     * [Custom Animation Properties](#custom-animation-properties)
@@ -31,27 +30,31 @@ Support for:
   * [Work with Alpine.js](#work-with-alpinejs)
   * [Attentions Seekers](#attentions-seekers)
   * [Options](#options)
+  * [Contribution Guide](#contribution-guide)
+    * [Build Lib](#build-lib)
+    * [Build Docs](#build-docs)
+    * [Sync from animate.css](#sync-from-animatecss)
 <!-- TOC -->
 
 ## Installation
 
-### NPM / Yarn
-
 ```shell
-npm i vue-animate.css --save
+npm i @asika32764/vue-animate --save
 
-# OR
-
-yarn add vue-animate.css
+yarn add @asika32764/vue-animate
 ```
-
-
 
 ## Transitions
 
+Import full animations.
+
+```ts
+import '@asika32764/vue-animate/vue-animate.css';
+```
+
 Use [Vue.js transitions](https://vuejs.org/guide/built-ins/transition.html "Vue.js Transitions") as you normally would, but for the transition name you will use one of [Animate.css animations](https://animate.style/#utilities "animations") **removing** the `animate__` and `in/Out` from the name.
 
-For example, if you want to use `animate__animated animate__fadeInLeft` and `animate__fadeInLeft` on your element, I'll write:
+For example, if you want to use `animate__animated animate__fadeInLeft` and `animate__fadeInLeft` on your element, You could write:
 
 ```html
 <TransitionGroup name="fadeLeft" tag="ul">
@@ -128,7 +131,7 @@ See also: https://github.com/alpinejs/alpine#x-transition
 To use Attentions, vue-animate.css provides a set of JS functions.
 
 ```ts
-import { bounce } from 'vue-animate.css';
+import { bounce } from '@asika32764/vue-animate';
 import { ref } from 'vue';
 
 const el = ref<HTMLElement>();
@@ -163,8 +166,8 @@ bounce(el.value, { duration: 300, delay: 200 }); // Add duration and delay by op
 Clone project and install deps.
 
 ```shell
-git clone git@github.com:asika32764/vue-animate.css.git
-cd vue-animate.css
+git clone git@github.com:asika32764/vue-animate.git
+cd vue-animate
 yarn install
 ```
 
