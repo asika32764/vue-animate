@@ -2,7 +2,7 @@
   "name": "vue-animate.css",
   "homepage": "https://github.com/vue-animate.css",
   "private": true,
-  "version": "0.0.0",
+  "version": "3.0.0",
   "type": "module",
   "css": "dist/vue-animate.css",
   "main": "dist/vue-animate.cjs",
