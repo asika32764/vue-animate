@@ -99,22 +99,22 @@ async function doAttention(name: keyof typeof attentionFunctions) {
       </div>
 
       <div class="mt-5 d-flex justify-content-center gap-3">
-        <a href="https://github.com/asika32764/vue-animate.css" target="_blank"
+        <a href="https://github.com/asika32764/vue-animate" target="_blank"
             class="btn btn-light px-4">
           <i class="fab fa-github"></i>
           GitHub
         </a>
-        <a href="https://github.com/asika32764/vue-animate.css" target="_blank"
+        <a href="https://www.npmjs.com/package/@asika32764/vue-animate" target="_blank"
             class="btn btn-light px-4">
           <i class="fab fa-npm"></i>
           NPM
         </a>
-        <a href="https://github.com/asika32764/vue-animate.css#readme" target="_blank"
+        <a href="https://github.com/asika32764/vue-animate#readme" target="_blank"
             class="btn btn-light px-4">
           <i class="fa fa-book"></i>
           Documentation
         </a>
-        <a href="https://github.com/asika32764/vue-animate.css#readme" target="_blank"
+        <a href="https://github.com/asika32764/vue-animate#readme" target="_blank"
             class="btn btn-light px-4">
           <i class="fa fa-scale-balanced"></i>
           MIT License
