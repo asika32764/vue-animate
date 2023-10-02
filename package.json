@@ -1,6 +1,6 @@
 {
-  "name": "vue-animate.css",
-  "homepage": "https://github.com/vue-animate.css",
+  "name": "@asika32764/vue-animate",
+  "homepage": "https://github.com/asika32764/vue-animate",
   "version": "3.0.0",
   "type": "module",
   "css": "dist/vue-animate.css",
