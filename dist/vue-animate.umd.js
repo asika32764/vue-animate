@@ -39,7 +39,7 @@
             el.style.setProperty('animation-direction', options.direction);
         }
         if (options.fillMode) {
-            el.style.setProperty('--animation-fill-mode', options.fillMode);
+            el.style.setProperty('animation-fill-mode', options.fillMode);
         }
     }
     function restore(el, rollbacks) {

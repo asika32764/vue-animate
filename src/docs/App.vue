@@ -124,7 +124,7 @@ async function doAttention(name: keyof typeof attentionFunctions) {
 
     <section id="transition-demo" class="" style="margin-top: 85px">
       <header class="text-center mb-5">
-        <h2 class="display-5">Transitions</h2>
+        <h2 id="transitions" class="display-5">Transitions</h2>
       </header>
 
       <div class="row">
@@ -183,7 +183,7 @@ async function doAttention(name: keyof typeof attentionFunctions) {
     <!--  Attentions DEMO  -->
     <section id="attentions-demo" style="margin-top: 75px">
       <header class="text-center mb-5">
-        <h2 class="display-5" ref="attentionTitle">Attentions</h2>
+        <h2 class="display-5 attentions" ref="attentionTitle">Attentions</h2>
 
         <p class="mt-3">Click a button to demo the animations.</p>
       </header>

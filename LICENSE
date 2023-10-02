@@ -21,7 +21,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 -----
 
-Animate.css
+The Animate.css license.
 
-This library is port of animate.css (https://github.com/animate-css/animate.css) to support Vue.js transitions.
-The animate.css LICENSE please see: https://github.com/animate-css/animate.css/blob/main/LICENSE
+This library is port of animate.css (https://github.com/animate-css/animate.css) for use with Vue.js transitions.
+The animate.css license please see: https://github.com/animate-css/animate.css/blob/main/LICENSE

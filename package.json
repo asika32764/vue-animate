@@ -11,7 +11,8 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "rollup -c",
+    "build:docs": "vue-tsc && vite build",
     "preview": "vite preview",
     "generate": "ts-node -T --esm bin/generate.ts"
   },
