@@ -1,11 +1,15 @@
 .backUp-enter-active {
   animation-duration: var(--animate-duration);
+  animation-delay: var(--animate-delay);
+  animation-iteration-count: var(--animate-repeat);
   animation-fill-mode: both;
   animation-name: backInUp;
 }
 
 .backUp-leave-active {
   animation-duration: var(--animate-duration);
+  animation-delay: var(--animate-delay);
+  animation-iteration-count: var(--animate-repeat);
   animation-fill-mode: both;
   animation-name: backOutUp;
 }

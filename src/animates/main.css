@@ -1,5 +1,5 @@
 
-@import 'animate.css/animate.css';
+@import './animate.css';
 @import './back/backDown.css';
 @import './back/backLeft.css';
 @import './back/backRight.css';

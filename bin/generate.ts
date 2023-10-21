@@ -1,6 +1,5 @@
-import { readdirSync } from 'fs';
-import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
-import { dirname, resolve, basename } from 'path';
+import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { basename, dirname, resolve } from 'node:path';
 
 type AnimationItem = {
   file: string;
@@ -13,14 +12,26 @@ const animations: { [action: string]: AnimationItem } = {};
 
 run();
 
+function copyAnimateCss() {
+  const animateCSS = resolve('node_modules/animate.css/animate.css');
+  let content = readFileSync(animateCSS, 'utf8');
+
+  content = content.replace('--animate-duration: 1s;', '--animate-duration: .5s;')
+  content = content.replace('--animate-delay: 1s;', '--animate-delay: 0;')
+
+  writeFileSync(resolve('src/animates/animate.css'), content);
+}
+
 function run() {
   const animateDir = resolve('node_modules/animate.css/source');
   const dirs = readdirSync(animateDir, { withFileTypes: true });
 
+  copyAnimateCss();
+
   rmSync('src/css', { recursive: true, force: true });
 
   let indexContent = `
-@import 'animate.css/animate.css';
+@import './animate.css';
 `;
 
   for (const dir of dirs) {
@@ -68,7 +79,7 @@ function run() {
 
   writeFileSync(resolve('src/animates/main.css'), indexContent);
 
-  writeFileSync(resolve('src/animations.json'), JSON.stringify(animJson, null, 2));
+  writeFileSync(resolve('src/animations-list.json'), JSON.stringify(animJson, null, 2));
 }
 
 function generateAttentions(dir: string) {
@@ -87,7 +98,7 @@ function generateAttentions(dir: string) {
 
       attentions.push(animName);
 
-      imports.push(`export * from '@src/attentions/${animName}';`);
+      imports.push(`export * from '@/attentions/${animName}';`);
 
       const dest = resolve('src/attentions', animName + '.ts');
       const code = handleAttention(animName);
@@ -100,11 +111,11 @@ function generateAttentions(dir: string) {
   }
 
   writeFileSync(resolve('src/attentions/index.ts'), imports.join("\n"));
-  writeFileSync(resolve('src/attentions.json'), JSON.stringify(attentions));
+  writeFileSync(resolve('src/attentions-list.json'), JSON.stringify(attentions));
 }
 
 function handleAttention(animName: string) {
-  return `import { type AttentionOptions, doAttention } from '@src/attention';
+  return `import { type AttentionOptions, doAttention } from '@/attention';
 
 export function ${animName}(
   el: HTMLElement, options?: AttentionOptions,
@@ -168,6 +179,8 @@ function makeTransitionCss(
 
   return `.${base}${direction}-${enterLeave}-active {
   animation-duration: var(--animate-duration);
+  animation-delay: var(--animate-delay);
+  animation-iteration-count: var(--animate-repeat);
   animation-fill-mode: both;
   animation-name: ${base}${inOut}${direction};
 }`;
@@ -182,6 +195,8 @@ function makeTransitionTs(
 
   return `.${base}${direction}-${enterLeave}-active {
   animation-duration: var(--animate-duration);
+  animation-delay: var(--animate-delay);
+  animation-iteration-count: var(--animate-repeat);
   animation-fill-mode: both;
   animation-name: ${base}${inOut}${direction};
 }`;

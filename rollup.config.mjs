@@ -1,13 +1,12 @@
 import nodeResolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import { readFileSync } from 'fs';
+import postcssDiscardComment from 'postcss-discard-comments';
+import postcssHeader from 'postcss-header';
+import postcssImport from 'postcss-import';
 import dts from 'rollup-plugin-dts';
 import { minify } from 'rollup-plugin-esbuild';
-import copy from 'rollup-plugin-copy';
 import postcss from 'rollup-plugin-postcss';
-import postcssImport from 'postcss-import';
-import postcssHeader from 'postcss-header';
-import postcssDiscardComment from 'postcss-discard-comments';
 
 const pkg = JSON.parse(readFileSync('./package.json', 'utf8'));
 
@@ -41,12 +40,28 @@ export default [
           postcssHeader({ header })
         ]
       }),
-      copy({
-        targets: [
-          { src: 'src/animates/**/*.css', dest: 'dist' },
-        ],
-        flatten: false
-      })
+    ]
+  },
+  {
+    input: 'src/animates/main.css',
+    output: {
+      file: addMinToCssFilename(pkg.css),
+      format: 'es',
+      sourcemap: true
+    },
+    plugins: [
+      postcss({
+        // modules: true,
+        extract: true,
+        minimize: true,
+        plugins: [
+          postcssImport(),
+          postcssDiscardComment({
+            removeAll: true
+          }),
+          postcssHeader({ header })
+        ]
+      }),
     ]
   },
   {
@@ -68,27 +83,23 @@ export default [
         format: 'esm',
         sourcemap: true,
       },
-      ...(process.env.NODE_ENV === 'production'
-        ? [
-          {
-            file: addMinToFilename(pkg.browser),
-            format: 'umd',
-            sourcemap: true,
-            name: 'VueAnimate',
-            plugins: [
-              minify(),
-            ]
-          },
-          {
-            file: addMinToFilename(pkg.module),
-            format: 'esm',
-            sourcemap: true,
-            plugins: [
-              minify(),
-            ]
-          }
+      {
+        file: addMinToFilename(pkg.browser),
+        format: 'umd',
+        sourcemap: true,
+        name: 'VueAnimate',
+        plugins: [
+          minify(),
         ]
-        : [])
+      },
+      {
+        file: addMinToFilename(pkg.module),
+        format: 'esm',
+        sourcemap: true,
+        plugins: [
+          minify(),
+        ]
+      }
     ],
     plugins: [
       nodeResolve(),
@@ -113,4 +124,8 @@ export default [
 
 function addMinToFilename(fileName) {
   return fileName.replace(/.js$/, '.min.js');
+}
+
+function addMinToCssFilename(fileName) {
+  return fileName.replace(/.css$/, '.min.css');
 }

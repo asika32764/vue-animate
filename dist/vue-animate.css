@@ -8,8 +8,8 @@
  */
 @charset "UTF-8";
 :root{
-  --animate-duration:1s;
-  --animate-delay:1s;
+  --animate-duration:.5s;
+  --animate-delay:0;
   --animate-repeat:1;
 }
 .animate__animated{
@@ -4042,416 +4042,582 @@
 }
 .backDown-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:backInDown;
 }
 .backDown-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:backOutDown;
 }
 .backLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:backInLeft;
 }
 .backLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:backOutLeft;
 }
 .backRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:backInRight;
 }
 .backRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:backOutRight;
 }
 .backUp-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:backInUp;
 }
 .backUp-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:backOutUp;
 }
 .bounce-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceIn;
 }
 .bounce-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceOut;
 }
 .bounceDown-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceInDown;
 }
 .bounceDown-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceOutDown;
 }
 .bounceLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceInLeft;
 }
 .bounceLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceOutLeft;
 }
 .bounceRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceInRight;
 }
 .bounceRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceOutRight;
 }
 .bounceUp-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceInUp;
 }
 .bounceUp-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:bounceOutUp;
 }
 .fade-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeIn;
 }
 .fade-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOut;
 }
 .fadeBottomLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInBottomLeft;
 }
 .fadeBottomLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutBottomLeft;
 }
 .fadeBottomRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInBottomRight;
 }
 .fadeBottomRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutBottomRight;
 }
 .fadeDown-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInDown;
 }
 .fadeDown-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutDown;
 }
 .fadeDownBig-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInDownBig;
 }
 .fadeDownBig-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutDownBig;
 }
 .fadeLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInLeft;
 }
 .fadeLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutLeft;
 }
 .fadeLeftBig-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInLeftBig;
 }
 .fadeLeftBig-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutLeftBig;
 }
 .fadeRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInRight;
 }
 .fadeRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutRight;
 }
 .fadeRightBig-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInRightBig;
 }
 .fadeRightBig-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutRightBig;
 }
 .fadeTopLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInTopLeft;
 }
 .fadeTopLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutTopLeft;
 }
 .fadeTopRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInTopRight;
 }
 .fadeTopRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutTopRight;
 }
 .fadeUp-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInUp;
 }
 .fadeUp-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutUp;
 }
 .fadeUpBig-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeInUpBig;
 }
 .fadeUpBig-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:fadeOutUpBig;
 }
 .flip-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:flip;
 }
 .flipX-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:flipInX;
 }
 .flipX-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:flipOutX;
 }
 .flipY-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:flipInY;
 }
 .flipY-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:flipOutY;
 }
 .lightSpeedLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:lightSpeedInLeft;
 }
 .lightSpeedLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:lightSpeedOutLeft;
 }
 .lightSpeedRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:lightSpeedInRight;
 }
 .lightSpeedRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:lightSpeedOutRight;
 }
 .rotate-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateIn;
 }
 .rotate-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateOut;
 }
 .rotateDownLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateInDownLeft;
 }
 .rotateDownLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateOutDownLeft;
 }
 .rotateDownRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateInDownRight;
 }
 .rotateDownRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateOutDownRight;
 }
 .rotateUpLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateInUpLeft;
 }
 .rotateUpLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateOutUpLeft;
 }
 .rotateUpRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateInUpRight;
 }
 .rotateUpRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rotateOutUpRight;
 }
 .slideDown-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:slideInDown;
 }
 .slideDown-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:slideOutDown;
 }
 .slideLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:slideInLeft;
 }
 .slideLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:slideOutLeft;
 }
 .slideRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:slideInRight;
 }
 .slideRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:slideOutRight;
 }
 .slideUp-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:slideInUp;
 }
 .slideUp-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:slideOutUp;
 }
 .roll-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rollIn;
 }
 .roll-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:rollOut;
 }
 .zoom-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomIn;
 }
 .zoom-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomOut;
 }
 .zoomDown-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomInDown;
 }
 .zoomDown-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomOutDown;
 }
 .zoomLeft-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomInLeft;
 }
 .zoomLeft-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomOutLeft;
 }
 .zoomRight-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomInRight;
 }
 .zoomRight-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomOutRight;
 }
 .zoomUp-enter-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomInUp;
 }
 .zoomUp-leave-active{
   animation-duration:var(--animate-duration);
+  animation-delay:var(--animate-delay);
+  animation-iteration-count:var(--animate-repeat);
   animation-fill-mode:both;
   animation-name:zoomOutUp;
 }
