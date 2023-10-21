@@ -3,7 +3,6 @@
   "homepage": "https://github.com/asika32764/vue-animate",
   "version": "3.0.1",
   "license": "MIT",
-  "type": "module",
   "css": "dist/vue-animate.css",
   "main": "dist/vue-animate.cjs",
   "browser": "dist/vue-animate.umd.js",
@@ -12,6 +11,7 @@
   "scripts": {
     "dev": "vite",
     "build": "rollup -c",
+    "build:prod": "NODE_ENV=production rollup -c",
     "build:docs": "vue-tsc && vite build",
     "preview": "vite preview",
     "generate": "ts-node -T --esm bin/generate.ts"

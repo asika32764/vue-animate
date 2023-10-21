@@ -72,7 +72,7 @@ export default [
         ? [
           {
             file: addMinToFilename(pkg.browser),
-            format: 'esm',
+            format: 'umd',
             sourcemap: true,
             name: 'VueAnimate',
             plugins: [
@@ -81,7 +81,7 @@ export default [
           },
           {
             file: addMinToFilename(pkg.module),
-            format: 'es',
+            format: 'esm',
             sourcemap: true,
             plugins: [
               minify(),
