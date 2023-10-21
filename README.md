@@ -38,19 +38,41 @@ Support for:
 
 ## Installation
 
+From NPM
+
 ```shell
 npm i @asika32764/vue-animate --save
 
 yarn add @asika32764/vue-animate
 ```
 
-## Transitions
+CDN
 
-Import full animations.
+```html
+<link rel="stylesheet" href="https://www.unpkg.com/@asika32764/vue-animate/dist/vue-animate.min.css"/>
+```
+
+## Import
+
+Import animations for JS Bundler.
 
 ```ts
 import '@asika32764/vue-animate/dist/vue-animate.css';
 ```
+
+Import in CSS or SCSS file.
+
+```css
+@import "@asika32764/vue-animate/dist/vue-animate.css";
+
+/* If you want to override CSS variables, write it just after importing */
+:root {
+  --animate-duration: .3s;
+  --animate-delay: 0;
+}
+```
+
+## Transitions
 
 Use [Vue.js transitions](https://vuejs.org/guide/built-ins/transition.html "Vue.js Transitions") as you normally would, but for the transition name you will use one of [Animate.css animations](https://animate.style/#utilities "animations") **removing** the `animate__` and `in/Out` from the name.
 
