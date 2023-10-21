@@ -1,7 +1,7 @@
 {
   "name": "@asika32764/vue-animate",
   "homepage": "https://github.com/asika32764/vue-animate",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "license": "MIT",
   "css": "dist/vue-animate.css",
   "main": "dist/vue-animate.cjs",
