@@ -1,7 +1,7 @@
 {
   "name": "@asika32764/vue-animate",
   "homepage": "https://github.com/asika32764/vue-animate",
-  "version": "3.0.1",
+  "version": "patch",
   "license": "MIT",
   "css": "dist/vue-animate.css",
   "main": "dist/vue-animate.cjs",
@@ -24,6 +24,7 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "animate.css": "^4.1.1",
     "lodash-es": "^4.17.21",
+    "minimist": "^1.2.8",
     "postcss-discard-comments": "^6.0.0",
     "postcss-header": "^3.0.3",
     "postcss-import": "^15.1.0",
