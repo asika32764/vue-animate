@@ -164,6 +164,20 @@ bounce(el.value);
 - [DEMO](https://vue-animate.simular.co/#attentions)
 - [Available Attentions Seekers](https://github.com/asika32764/vue-animate.css/tree/main/src/attentions)
 
+This function is very useful for adding some one-time animation to html element, for example, 
+this is an incorrect password attentions.
+
+```ts
+import { headShake } from '@asika32764/vue-animate';
+
+if (!await checkPassword()) {
+  headShake(passwordInput.value);
+}
+```
+
+![handshake](https://github.com/asika32764/vue-animate/assets/1639206/0fea77fb-feda-4e5d-a8b1-9fbb59c8f330)
+
+
 ## Options
 
 You could add animation properties to following parameters.
